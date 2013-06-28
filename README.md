@@ -1,7 +1,7 @@
 Current Status
 ---------------
 * To run Markov chain portion of the assignment, run markov.py.
-* To print a Twitter user's timeline, edit the twitter_api.py file as noted before running
+* To print several users' timelines, edit the twitter_api.py file accordingly.
     * The twitter_api.py file does not currently interact with the markov.py file.
 
 Description
