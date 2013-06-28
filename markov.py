@@ -2,7 +2,7 @@
 
 from random import choice
 from sys import argv
-
+import twitter_api
 
 def make_chains(corpus):
     """Takes an input text as a string and returns a dictionary of
@@ -38,7 +38,7 @@ def make_text(chains):
 
     i = 1
 
-    while random_list[-1][-1] != "." and random_list[-1][-1] != "?" and random_list[-1][-1] != "!":
+    while random_list[-1][-1] != "." and random_list[-1][-1] != "?" and random_list[-1][-1] != "!" :
         #takes the last two values from the list
         #ascertains the corresponding list of values from our markov dictionary
         #randomly chooses a value from that list
@@ -73,6 +73,7 @@ def find_first_key(chains):
 
 def main():
     script, file_name = argv
+    #run the twitter_api.py
 
     # Change this to read input_text from a file
     input_filename = open(file_name)
